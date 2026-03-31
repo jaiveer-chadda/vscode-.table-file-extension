@@ -31,8 +31,16 @@
 				},
 				{
 					"name": "string.quoted.single.table",
-					"begin": "'",
-					"end": "'",
+					"match": "(?<![a-zA-Z0-9])'.*'(?![a-zA-Z0-9])",
+					"patterns": [{
+						"name": "constant.character.escape.table",
+						"match": "\\\\."
+					}]
+				},
+				{
+					"name": "string.quoted.doublecn.table",
+					"begin": "`",
+					"end": "`",
 					"patterns": [{
 						"name": "constant.character.escape.table",
 						"match": "\\\\."
