@@ -1,0 +1,11 @@
+{
+    "comments": {
+        // symbol used for a single line comment.
+        "lineComment": { "noIndent": false, "comment": "#" },
+        // symbols used to start and end a block comment.
+        /* "blockComment": [ "", "" ] */
+    },
+    "brackets": [         ["{", "}"], ["[", "]"], ["(", ")"]                                       ],
+    "autoClosingPairs": [ ["{", "}"], ["[", "]"], ["(", ")"], ["\"", "\""], ["'", "'"], ["`", "`"] ],
+    "surroundingPairs": [ ["{", "}"], ["[", "]"], ["(", ")"], ["\"", "\""], ["'", "'"], ["`", "`"] ]
+}

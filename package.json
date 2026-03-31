@@ -1,0 +1,24 @@
+{
+	"name": "table-files",
+	"displayName": ".table files",
+	"description": "",
+	"version": "0.0.1",
+	"engines": { "vscode": "^1.110.0" },
+	"categories": [ "Programming Languages" ],
+	"contributes": {
+
+		"languages": [{
+			"id": "table",
+			"aliases":		[ "Table", "table"	],
+			"extensions":	[ ".tb",".table"	],
+			"configuration": "./language-configuration.json"
+		}],
+
+		"grammars": [{
+			"language": "table",
+			"scopeName": "source.table",
+			"path": "./syntaxes/table.tmLanguage.json"
+		}]
+
+	}
+}
