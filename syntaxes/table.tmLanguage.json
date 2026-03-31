@@ -5,8 +5,8 @@
 	"scopeName": "source.table",
 
 	"patterns": [
-		{ "include": "#keywords" 	},
-		{ "include": "#strings"		}
+		{ "include": "#keywords" },
+		{ "include": "#strings" }
 	],
 
 	"repository": {
@@ -19,14 +19,26 @@
 		},
 
 		"strings": {
-			"name": "string.quoted.double.table",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": [{
-					"name": "constant.character.escape.table",
-					"match": "\\\\."
-			}]
+			"patterns": [
+				{
+					"name": "string.quoted.double.table",
+					"begin": "\"",
+					"end": "\"",
+					"patterns": [{
+						"name": "constant.character.escape.table",
+						"match": "\\\\."
+					}]
+				},
+				{
+					"name": "string.quoted.single.table",
+					"begin": "'",
+					"end": "'",
+					"patterns": [{
+						"name": "constant.character.escape.table",
+						"match": "\\\\."
+					}]
+				}
+			]
 		}
-
 	}
 }
